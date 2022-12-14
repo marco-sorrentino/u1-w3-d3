@@ -140,7 +140,12 @@
        Scrivi una funzione che aggiunga un secondo paragrafo al primo div
     */
 
-      const addParagraph = function () {};
+      const addParagraph = function () {
+        const newText = document.querySelector("body div");
+        const newP = document.createElement("p");
+        newText.appendChild(newP);
+        newP.innerText = "Ho aggiunto un nuovo paragrafo come da richiesta";
+      };
 
       addParagraph();
 
